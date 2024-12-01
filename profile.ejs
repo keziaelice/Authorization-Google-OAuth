@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+    </head>
+    <body>
+        <h1>Hello, <%= user.displayName %></h1> <!-- mengambil data yang dikirim (object user) -->
+        <p>Email: <%= user.emails[0].value %></p>
+        <br>
+        <a href="/logout"> <!-- ketika user click button logout, akan diarahkan ke URL "/logout" -->
+            <button>Logout</button>
+        </a>
+    </body>
+</html>
